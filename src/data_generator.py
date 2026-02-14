@@ -1,4 +1,4 @@
-# You created your first backend module that generates employee activity data.
+# Created first backend module that generates employee activity data.
 
 This data will be used by AI to detect insider threats.
 import pandas as pd
