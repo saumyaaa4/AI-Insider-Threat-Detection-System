@@ -1,91 +1,115 @@
-# 🔐 AI-Powered Insider Threat Detection System
+🔐 AI-Powered Insider Threat Detection System
+📌 Project Overview
 
-## 📌 Overview
+This project implements a machine learning-based anomaly detection system to identify potential insider threats using employee behavioral log data.
 
-The AI-Powered Insider Threat Detection System is an industry-level cybersecurity project designed to detect malicious insider activities using Machine Learning, Deep Learning, and behavioral analytics.
+The system analyzes patterns such as login activity, file access frequency, data download volume, and device usage behavior to detect abnormal activities that may indicate malicious intent.
 
-This system analyzes employee activity patterns such as login behavior, file access frequency, data downloads, and device usage to identify suspicious or abnormal actions that may indicate insider threats.
+The goal of this project is to simulate a real-world enterprise monitoring framework capable of identifying high-risk users using behavioral analytics.
 
-This project simulates real-world enterprise security monitoring systems used by organizations to protect sensitive data.
+🎯 Problem Statement
 
----
+Insider threats are difficult to detect because malicious behavior often blends with normal activity. Traditional rule-based systems fail to identify subtle behavioral deviations.
 
-## 🚀 Key Features
+This project applies unsupervised machine learning techniques to detect anomalies without relying on labeled fraud data.
 
-- User Behavior Monitoring
-- Anomaly Detection using Machine Learning (Isolation Forest, One-Class SVM)
-- Behavioral Analytics for insider threat identification
-- Risk Scoring System for employees
-- Synthetic enterprise log data generation
-- Scalable architecture for real-world deployment
-- Dashboard visualization (Planned)
-- Generative AI investigation summaries (Planned)
+📊 Dataset Description
 
----
+A synthetic enterprise log dataset was generated containing features such as:
 
-## 🧠 Technologies Used
+Login frequency
 
-### Programming & Analysis
-Python, Pandas, NumPy, SQL
+Login time deviation (after-hours access)
 
-### Machine Learning & AI
-Scikit-learn, Anomaly Detection, Isolation Forest, One-Class SVM
+File access count
 
-### Deep Learning (Planned)
-Autoencoders, Neural Networks, TensorFlow, PyTorch
+Data download volume
 
-### Visualization & Deployment
-Matplotlib, Seaborn, Streamlit
+Device usage anomalies
 
-### Tools
-Git, GitHub, Jupyter Notebook, VS Code
+System access irregularities
 
----
+The dataset simulates realistic organizational activity patterns with behavioral variations.
 
-## 📊 System Architecture
+🧹 Data Preprocessing
 
-1. Data Generation Layer  
-   Simulates employee activity logs  
+Handled missing values
 
-2. Anomaly Detection Layer  
-   Detects suspicious behavioral patterns using ML  
+Standardized numerical features using StandardScaler
 
-3. Risk Scoring Layer  
-   Assigns threat score to each employee  
+Performed exploratory data analysis (EDA)
 
-4. Visualization Layer (Planned)  
-   Dashboard for monitoring insider threats  
+Inspected feature distributions and behavioral trends
 
-5. GenAI Explanation Layer (Planned)  
-   Generates investigation summaries  
+📈 Exploratory Data Analysis (EDA)
 
----
+EDA revealed:
 
-## 🎯 Use Cases
+Significant variation in login timing among users
 
-- Enterprise cybersecurity monitoring
-- Insider threat detection
-- Fraud detection systems
-- Behavioral analytics systems
+High file access activity correlated with increased anomaly scores
 
----
+After-hours login behavior contributed strongly to suspicious patterns
 
-## 📈 Future Enhancements
+Visualizations included distribution plots, correlation heatmaps, and behavioral comparisons.
 
-- Deep Learning anomaly detection using Autoencoders
-- Real-time monitoring dashboard using Streamlit
-- GenAI-powered threat investigation assistant
-- Integration with real enterprise log data
+🤖 Model Implementation
+1️⃣ Isolation Forest
 
----
+Used for unsupervised anomaly detection
 
-## 👩‍💻 Author
+Identified abnormal user behavior based on isolation depth
 
-Saumya Bhagat  
-AI/ML Enthusiast | Data Analyst | Aspiring AI Engineer
+2️⃣ One-Class SVM
 
----
+Implemented to compare anomaly detection performance
 
-## ⭐ Project Status
+Evaluated sensitivity to rare behavioral patterns
 
-Currently in development. Building toward industry-level deployment.
+📊 Results
+
+Successfully detected anomal behavioral patterns in employee activity logs
+
+Isolation Forest demonstrated better stability in handling outliers
+
+Users with unusual login hours combined with high data transfer showed higher anomaly scores
+
+A risk scoring mechanism was implemented to classify employees based on anomaly intensity
+
+This approach demonstrates how machine learning can assist in proactive insider threat monitoring.
+
+💡 Key Insights
+
+Behavioral deviation is a stronger indicator than individual activity spikes
+
+Login timing irregularity significantly impacts anomaly detection
+
+Unsupervised models can identify high-risk users without labeled fraud data
+
+🛠 Tech Stack
+
+Programming: Python
+Data Processing: Pandas, NumPy
+Machine Learning: Scikit-learn (Isolation Forest, One-Class SVM)
+Visualization: Matplotlib, Seaborn
+Tools: Jupyter Notebook, Git, GitHub
+
+🔮 Future Enhancements
+
+Deep learning-based anomaly detection (Autoencoders)
+
+Real-time monitoring dashboard using Streamlit
+
+Integration with real enterprise log datasets
+
+Advanced risk scoring and alert system
+
+👩‍💻 Author
+
+Saumya Bhagat
+B.Tech | Data Analytics & Machine Learning
+GitHub: https://github.com/saumyaaa4
+
+📌 Project Status
+
+Core anomaly detection pipeline completed. Future enhancements planned for deployment and real-time monitoring.
