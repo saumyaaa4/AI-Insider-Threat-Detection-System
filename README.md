@@ -1,5 +1,7 @@
 # 🔐 AI-Powered Insider Threat Detection System
 
+🚧 **Project Status:** Work in Progress – Core anomaly detection pipeline completed. Deployment and dashboard integration under development.
+
 ---
 
 ## 📌 Project Overview
